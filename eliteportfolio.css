@@ -1,0 +1,201 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #539dcc;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #007BFF;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Header & Navigation */
+header {
+    background: rgba(36, 1, 82, 0.9);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+/* Hero Section */
+#hero {
+    background: url('https://placehold.co/1920x1080/121212/f4f4f4?text=Welcome') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(51, 9, 85, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+#about {
+    background-color: #1e1e1e;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-content p {
+    max-width: 800px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #121212;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #1e1e1e;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact-form label {
+    display: none; /* Hide labels visually but keep for accessibility */
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #2e2e2e;
+    color: #f4f4f4;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: #999;
+}
+
+#contact-form button {
+    cursor: pointer;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background: #1e1e1e;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #2e2e2e;
+}
